@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c4e6350b-87b9-456d-accd-adffebcf3aba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/db/volumes/milvus/rdb_data_meta_kv/LOG.old.1707192319577704" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/volumes/milvus/rdb_data_meta_kv/LOG.old.1707192329839317" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/volumes/milvus/rdb_data_meta_kv/LOG.old.1707192365674428" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/volumes/milvus/rdb_data_meta_kv/LOG.old.1707192378680017" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/volumes/milvus/rdb_data_meta_kv/LOG.old.1707192381721694" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/volumes/milvus/rdb_data_meta_kv/LOG.old.1707192385712880" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/volumes/milvus/rdb_data_meta_kv/LOG.old.1707192414029625" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/volumes/milvus/rdb_data_meta_kv/LOG.old.1707192430370352" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfgs/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cfgs/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/history_24/baihuabeiqishu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/history_24/baihuabeiqishu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executor.py" beforeDir="false" afterPath="$PROJECT_DIR$/executor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradioui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gradioui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2btK3GHrOy7fVERi78VEuMd7m0S" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.cli.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gradioui.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Coding/rag/history_rag&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.cli">
+    <configuration name="cli" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="history_rag" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="BASE_URL" value="https://api.nextapi.fun" />
+        <env name="GOOGLE_API_BASE" value="api.betterspace.top" />
+        <env name="GOOGLE_API_KEY" value="AIzaSyBLA4-6kNNNw8ADIfI-w9qeePZC0kV_7f4" />
+        <env name="OPENAI_API_KEY" value="ak-HhzpwsqvYbd83DgTUc5wEQiD4hzGuyWR4siqJUfLso1VY8XT" />
+        <env name="ZILLIZ_CLUSTER_ID" value="in03-285b13fe1f9f259" />
+        <env name="ZILLIZ_PROJECT_ID" value="proj-98e3b628ba30bfa0e8ce4f" />
+        <env name="ZILLIZ_TOKEN" value="504a759962c8b29e511e1ec41594c4616bbdcdbc3345be6375b060b73d6e57319bd8c0e9e27b6255de8d917b606a2e232671017c" />
+        <env name="DASHSCOPE_API_KEY" value="sk-0ea1f934e6a34649adc254d0018cd017" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cli.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gradioui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="history_rag" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="BASE_URL" value="https://api.nextapi.fun" />
+        <env name="GOOGLE_API_BASE" value="api.betterspace.top" />
+        <env name="GOOGLE_API_KEY" value="AIzaSyBLA4-6kNNNw8ADIfI-w9qeePZC0kV_7f4" />
+        <env name="OPENAI_API_KEY" value="ak-HhzpwsqvYbd83DgTUc5wEQiD4hzGuyWR4siqJUfLso1VY8XT" />
+        <env name="ZILLIZ_CLUSTER_ID" value="in03-285b13fe1f9f259" />
+        <env name="ZILLIZ_PROJECT_ID" value="proj-98e3b628ba30bfa0e8ce4f" />
+        <env name="ZILLIZ_TOKEN" value="504a759962c8b29e511e1ec41594c4616bbdcdbc3345be6375b060b73d6e57319bd8c0e9e27b6255de8d917b606a2e232671017c" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gradioui.py" />
+      <option name="PARAMETERS" value="--mode auto" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.cli" />
+      <item itemvalue="Python.gradioui" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.cli" />
+        <item itemvalue="Python.gradioui" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4e6350b-87b9-456d-accd-adffebcf3aba" name="Changes" comment="" />
+      <created>1707028735262</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707028735262</updated>
+      <workItem from="1707028736909" duration="1180000" />
+      <workItem from="1707029943300" duration="13583000" />
+      <workItem from="1707110619238" duration="13569000" />
+      <workItem from="1707126502955" duration="13279000" />
+      <workItem from="1707185815821" duration="14939000" />
+      <workItem from="1707203834915" duration="815000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/Lib/site-packages/llama_index/llms/gemini.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/Lib/site-packages/llama_index/llms/gemini.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/Lib/site-packages/llama_index/llms/gemini.py</url>
+          <line>95</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/Lib/site-packages/llama_index/indices/prompt_helper.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/Lib/site-packages/llama_index/llms/dashscope.py</url>
+          <line>178</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/executor.py</url>
+          <line>328</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/history_rag$test.coverage" NAME="test 覆盖结果" MODIFIED="1707063088523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/history_rag$gradioui.coverage" NAME="gradioui 覆盖结果" MODIFIED="1707129199538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/history_rag$cli.coverage" NAME="cli 覆盖结果" MODIFIED="1707204610060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

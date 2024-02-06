@@ -1,3 +1,5 @@
+import argparse
+
 from executor import MilvusExecutor
 from executor import PipelineExecutor
 
@@ -31,7 +33,6 @@ class GradioCommandLine(CommandLine):
             self._executor.set_debug(True)
             return self._executor.query(question)
 
-
 def initialize_cli(cfg_path, resolution):
     global cli_instance
     cli_instance = GradioCommandLine(cfg_path)
@@ -45,30 +46,50 @@ def initialize_cli(cfg_path, resolution):
     cli_instance._executor.build_query_engine()
     return "CLI 初始化完成"
 
+def gr_init(mode):
+    with gr.Blocks() as demo:
+        if mode != 'auto':
+            # 初始化
+            gr.Interface(fn=initialize_cli,
+                         inputs=[gr.Textbox(
+                             lines=1, value="cfgs/config.yaml"),
+                             gr.Dropdown(resolutions, label="索引类别", value="milvus")],
+                         outputs="text",
+                         submit_btn="初始化", clear_btn="清空")
+            # 构建索引
+            gr.Interface(fn=lambda command, argument, overwrite: cli_instance.index(command, argument, overwrite),
+                         inputs=[gr.Dropdown(choices=build_tasks, label="选择命令", value="构建索引"),
+                                 gr.Textbox(label="路径"), gr.Checkbox(label="覆盖之前索引")], outputs="text",
+                         submit_btn="提交", clear_btn="清空")
 
-with gr.Blocks() as demo:
-    # 初始化
-    gr.Interface(fn=initialize_cli,
-                 inputs=[gr.Textbox(
-                     lines=1, value="cfgs/config.yaml"),
-                     gr.Dropdown(resolutions, label="索引类别", value="milvus")],
-                 outputs="text",
-                 submit_btn="初始化", clear_btn="清空")
-    # 构建索引
-    gr.Interface(fn=lambda command, argument, overwrite: cli_instance.index(command, argument, overwrite),
-                 inputs=[gr.Dropdown(choices=build_tasks, label="选择命令", value="构建索引"),
-                         gr.Textbox(label="路径"), gr.Checkbox(label="覆盖之前索引")], outputs="text",
-                 submit_btn="提交", clear_btn="清空")
+        # 提问
+        gr.Interface(fn=lambda command, argument: cli_instance.query(command, argument),
+                     inputs=[gr.Dropdown(choices=query_tasks, label="选择命令", value="提问"),
+                             gr.Textbox(label="问题")], outputs="text",
+                     submit_btn="提交", clear_btn="清空")
+        with open("docs/web_ui.md", "r", encoding="utf-8") as f:
+            article = f.read()
+        gr.Markdown(article)
 
-    # 提问
-    gr.Interface(fn=lambda command, argument: cli_instance.query(command, argument),
-                 inputs=[gr.Dropdown(choices=query_tasks, label="选择命令", value="提问"),
-                         gr.Textbox(label="问题")], outputs="text",
-                 submit_btn="提交", clear_btn="清空")
-    with open("docs/web_ui.md", "r", encoding="utf-8") as f:
-        article = f.read()
-    gr.Markdown(article)
+    return demo
 
 if __name__ == '__main__':
-    # 启动 Gradio 界面
-    demo.launch()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--mode', type=str, help='Mode to run the program', default='manual')
+    args = parser.parse_args()
+
+    mode = args.mode
+    print(f'Running in {mode} mode')
+    demo = gr_init(mode)
+    if mode == 'auto':
+        initialize_cli('cfgs/config.yaml', 'pipeline')
+        cli_instance.index("构建索引", "https://raw.githubusercontent.com/wxywb/history_rag/master/data/history_24/baihuasanguozhi.txt", False)
+        # 启动 Gradio 界面
+        demo.launch()
+    elif mode == 'manual':
+        # 启动 Gradio 界面
+        demo.launch()
+    else:
+        raise AttributeError
+    # # 启动 Gradio 界面
+    # demo.launch()

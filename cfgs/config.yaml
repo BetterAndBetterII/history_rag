@@ -1,6 +1,7 @@
 llm:
-    name: "gpt-4-0125-preview"
+    name: "qwen-max"
     temperature: 0.01
+#    api_base: "api.betterspace.top"
 embedding:
     name: "BAAI/bge-base-zh-v1.5"
     dim: 768 

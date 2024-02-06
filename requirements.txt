@@ -1,4 +1,4 @@
-llama-index>=0.9.39
+llama-index>=0.9.44
 pymilvus
 easydict
 dashscope
@@ -8,3 +8,4 @@ transformers
 pyyaml
 google-generativeai
 gradio
+sentence-transformers
